@@ -8571,25 +8571,38 @@ ul {
     height: 490px;
 } 
 }
-.main-menu .mobile-nav__toggler
 
 
+ /* Carousel Navigation Buttons at the Bottom */
+.feature-carousel .owl-nav {
+  position: absolute;
+  bottom: -15px; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
 
-.owl-carousel .owl-nav button.owl-next{
-  font-size: 200px !important;
-  color: #31478F !important;
- 
-  
+.feature-carousel .owl-nav button {
+  background-color:#D7B267 !important; 
+  color: #fff !important; 
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px !important;
+  cursor: pointer;
+  margin: 0 10px; /* Spacing between buttons */
+  transition: all 0.3s;
+  pointer-events: auto;
+}
+
+.feature-carousel .owl-nav button:hover {
+  background-color:#31478F !important; 
 }
 
 
 
- .owl-carousel .owl-nav button.owl-prev{
-  font-size: 200px !important;
-  color: #31478F !important;
-  
-  
- }
- .owl_nav{
-  text-align: center !important;
- }
