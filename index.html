@@ -46,6 +46,9 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/aports.css" />
     <link rel="stylesheet" href="assets/css/aports-responsive.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
 
 <body class="custom-cursor">
@@ -602,10 +605,7 @@
 <!--Floor Plan Two End-->
 
 
-        <!--Feature One Start-->
-      <!-- Include Owl Carousel CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        
       
       <section class="feature-one">
           <div class="feature-one__bg-box">
@@ -685,38 +685,6 @@
           </div>
       </section>
       
-      <!-- Include jQuery and Owl Carousel JS -->
-      <script class="owl_nav" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script class="owl_nav" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      
-      <script>
-      $(document).ready(function(){
-          $('.feature-carousel').owlCarousel({
-              items:2,                  // Display 2 cards at a time by default
-              loop: true,                // Enable looping
-              margin: 20,                // Adjust margin between cards if needed
-              nav: true,                 // Display navigation arrows
-              dots: true,                // Display dots for pagination
-              autoplay: true,            // Auto slide
-              autoplayTimeout: 2000,     // Time before changing slides
-              autoplayHoverPause: true,  // Pause on hover
-              responsive: {
-                  0: { items: 1 },       // 1 item on small screens (up to 768px)
-                  768: { items: 2 },     // 2 items on tablet screens (768px to 1024px)
-                  1024: { items: 2 },    // 2 items on larger screens (above 1024px)
-              },
-              slideBy: 1                 // Slide one card at a time
-          });
-      });
-      
-      
-      </script>
-
-
-
-
-
-
        <!--Feature Three Start-->
        <section class="feature-three pt-5">
         <div class="container">
@@ -913,6 +881,7 @@
         </div>
     </div>
 </section>
+<!--Apartments One End-->
 <!--Apartments Two End-->
 
 
@@ -1003,22 +972,6 @@
             </div>
         </section>
         <!--Contact Three End-->
-
-
-
-
-
-
-      
-
-   
-
-       
-
-        
-
-    
-
        
 
         <!--Site Footer Start-->
@@ -1185,6 +1138,9 @@
     <!-- /.search-popup -->
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-right-arrow"></i></a>
+    <!-- Include jQuery and Owl Carousel JS -->
+    <script class="owl_nav" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script class="owl_nav" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1211,7 +1167,28 @@
     <script src="assets/vendors/circleType/jquery.circleType.js"></script>
     <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
 
-
+    <script>
+        $(document).ready(function(){
+            $('.feature-carousel').owlCarousel({
+                items:2,                  // Display 2 cards at a time by default
+                loop: true,                // Enable looping
+                margin: 20,                // Adjust margin between cards if needed
+                nav: true,                 // Display navigation arrows
+                dots: true,                // Display dots for pagination
+                autoplay: true,            // Auto slide
+                autoplayTimeout: 2000,     // Time before changing slides
+                autoplayHoverPause: true,  // Pause on hover
+                responsive: {
+                    0: { items: 1 },       // 1 item on small screens (up to 768px)
+                    768: { items: 2 },     // 2 items on tablet screens (768px to 1024px)
+                    1024: { items: 2 },    // 2 items on larger screens (above 1024px)
+                },
+                slideBy: 1                 // Slide one card at a time
+            });
+        });
+        
+        
+        </script>
     <script>
         document.querySelectorAll('#featureCarousel .carousel-item').forEach((el) => {
             const next = el.nextElementSibling || document.querySelector('#featureCarousel .carousel-item:first-child');
