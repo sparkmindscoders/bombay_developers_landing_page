@@ -1305,7 +1305,10 @@ ul {
 .main-menu-two__logo {
   position: relative;
   display: block;
-  padding: 24.5px 0;
+  padding: 10px 0;
+}
+.main-menu-two__logo  img{
+  height: 120px;
 }
 
 .main-menu-two__main-menu-box {
