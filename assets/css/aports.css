@@ -8787,11 +8787,7 @@ ul {
 }
 
 /* Hover Effect */
-.feature-three__single:hover {
-  transform: scale(1.05); /* Slightly grow on hover */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Increased shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-}
+
 
 /* Tilt Effect on Hover */
 .feature-three__single:hover {
@@ -8814,3 +8810,22 @@ ul {
 .feature-three__single:nth-child(4) { animation-delay: 0.4s; }
 .feature-three__single:nth-child(5) { animation-delay: 0.5s; }
 .feature-three__single:nth-child(6) { animation-delay: 0.6s; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
