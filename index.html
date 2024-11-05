@@ -110,7 +110,7 @@
                                     <a href="#" class="main-menu-two__search search-toggler icon-magnifying-glass"></a>
                                 </div> -->
                                 <div class="main-menu-two__btn-box">
-                                    <a href="contact.html" class="thm-btn main-menu-two__btn">Schedule a Visit</a>
+                                    <a href="contact.html" class="thm-btn main-menu-two__btn " data-bs-toggle="modal" data-bs-target="#inquiryModal">Schedule a Visit</a>
                                 </div>
                             </div>
                         </div>
@@ -264,7 +264,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <a href="about.html" class="thm-btn about-one__btn">More Detail</a>
+                            <a href="about.html" class="thm-btn about-one__btn" data-bs-toggle="modal" data-bs-target="#inquiryModal">More Detail</a>
                         </div>
                     </div>
                 </div>
@@ -652,8 +652,8 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-form__btn-box">
-                <button type="submit" class="thm-btn contact-form__btn">Send a Message</button>
+            <div class="contact-form__btn-box" >
+                <button type="submit" class="thm-btn contact-form__btn"  data-bs-toggle="modal" data-bs-target="#inquiryModal">Send a Message</button>
             </div>
         </div>
     </div>
@@ -1227,7 +1227,40 @@
         </footer>
         
         <!--Site Footer End-->
-
+        <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="inquiryModalLabel" style="color: white;">Real Estate Inquiry</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="inquiryForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" style="background-color: #31478F; border-radius: 5px; color: white;" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" style="background-color: #D7B267; border-radius: 5px; color: white;" form="inquiryForm">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div><!-- /.page-wrapper -->
 
@@ -1380,3 +1413,8 @@
 
 <!-- Mirrored from aports-html.vercel.app/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Oct 2024 07:02:18 GMT -->
 </html>
+
+
+
+
+

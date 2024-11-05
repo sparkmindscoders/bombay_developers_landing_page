@@ -8688,3 +8688,129 @@ ul {
 
 
 
+/* Custom Styles */
+.modal-content {
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  border: 3px solid black; /* Border */
+  position: relative; /* For overlay */
+  overflow: hidden; /* Ensure children don’t overflow */
+}
+
+.modal-header {
+  background: linear-gradient(to right, #31478F, #D7B267); /* Gradient background */
+  color: white; /* Text color */
+  border-top-left-radius: 15px; /* Match rounded corners */
+  border-top-right-radius: 15px; /* Match rounded corners */
+  padding: 1rem; /* Padding for header */
+}
+
+.modal-body {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for background */
+  border-radius: 0 0 15px 15px; /* Match rounded corners at the bottom */
+  animation: fadeIn 0.3s; /* Animation for opening */
+}
+
+.modal-footer {
+  border: none; /* Remove border */
+}
+
+.form-label {
+  font-weight: bold; /* Bold labels */
+}
+
+.form-control {
+  border-radius: 10px; /* Rounded input fields */
+  border: 2px solid #31478F; /* Custom border color */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.form-control:focus {
+  border-color: #D7B267; /* Focus border color */
+  box-shadow: 0 0 5px rgba(215, 178, 103, 0.5); /* Focus shadow effect */
+}
+
+.thm-btn {
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.thm-btn:hover {
+  background-color: #218838; /* Darker on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Keyframes for Fade In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Background for Modal */
+
+
+
+
+
+
+
+
+
+
+
+/* General Card Styling */
+.feature-three__single {
+  background: #ffffff; /* Card background */
+  border-radius: 10px; /* Rounded corners */
+ 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Default shadow */
+  position: relative; /* For pseudo-elements */
+  opacity: 0; /* Initial opacity for entrance animation */
+  transform: scale(0.8); /* Start smaller */
+  animation: fadeInUp 0.6s forwards; /* Entrance animation */
+}
+
+/* Entrance Animation */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+  }
+}
+
+/* Hover Effect */
+.feature-three__single:hover {
+  transform: scale(1.05); /* Slightly grow on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Increased shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Tilt Effect on Hover */
+.feature-three__single:hover {
+  transform: scale(1.05) rotate(2deg); /* Tilt and grow */
+}
+
+/* Icon Animation */
+.feature-three__icon {
+  transition: transform 0.3s ease; /* Transition for icon */
+}
+
+.feature-three__single:hover .feature-three__icon {
+  transform: scale(1.2) rotate(-10deg); /* Bounce effect on icon */
+}
+
+/* Sequential Animation Delay */
+.feature-three__single:nth-child(1) { animation-delay: 0.1s; }
+.feature-three__single:nth-child(2) { animation-delay: 0.2s; }
+.feature-three__single:nth-child(3) { animation-delay: 0.3s; }
+.feature-three__single:nth-child(4) { animation-delay: 0.4s; }
+.feature-three__single:nth-child(5) { animation-delay: 0.5s; }
+.feature-three__single:nth-child(6) { animation-delay: 0.6s; }
