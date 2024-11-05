@@ -411,8 +411,9 @@ ul {
   height: 50px;
   background: var(--aports-base);
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 70px;
+  right: 3px;
+
   z-index: 99;
   text-align: center;
   -webkit-transition: all 0.4s ease;
@@ -8606,7 +8607,83 @@ ul {
 
 
 
+.sticky-buttons {
+  position: fixed;
+  right: 0;
+  bottom: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
 
+}
+
+.sticky-buttons a {
+  padding: 10px 20px;
+  background-color: #31478F; /* Dark red color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+.sticky-buttons :hover{
+ background-color:#D7B267;
+}
+.sticky-buttons a span{
+  display: none;
+}
+/* Hide WhatsApp button on desktop */
+.whatsapp-btn {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  .sticky-buttons {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #fff; /* Background color for mobile */
+    border-top: 1px solid #ccc; /* Border for separation */
+    z-index: 2;
+    font-size: 15px;
+  }
+  .sticky-buttons a {
+    flex: 1;
+    padding: 10px 5px;
+  }
+  .sticky-buttons a span{
+    display: inline-block;
+    padding-left: 5px;
+  }
+  /* Show WhatsApp button on mobile */
+  .whatsapp-btn {
+    display: inline-block;
+  }
+}
+@media (max-width: 370px) {
+  .sticky-buttons {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #fff; /* Background color for mobile */
+    border-top: 1px solid #ccc; /* Border for separation */
+    z-index: 2;
+    font-size: 12px;
+  }
+
+  .sticky-buttons span{
+    font-size: 10px;
+    padding-left: 5px;
+  }
+}
 
 
 
